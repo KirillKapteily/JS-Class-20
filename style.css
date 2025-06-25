@@ -13,10 +13,27 @@
   position: absolute;
   left: 0;
   top: 50%;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
 }
 
-/* .left{
-      position: absolute;
-    left: 10px;
-} */
+
+
+.testing{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.block {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+  /* left: 50%;
+  top: 50%; */
+  /* transform: translate(-50%, -50%); */
+}

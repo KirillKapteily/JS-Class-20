@@ -7,11 +7,11 @@
 //     console.log(event.currentTarget);
 // });
 
-// //1.1
-// document.addEventListener('keydown', event => {
-//     console.log(event.key);
-//     console.log(event.code);
-// });
+//1.1
+document.addEventListener('keydown', event => {
+    console.log(event.key);
+    console.log(event.code);
+});
 
 // // document.addEventListener('keyup', event => {
 // // console.log(event);
@@ -55,4 +55,40 @@ document.addEventListener('keydown', (event) => {
         up += steps;
         box.style.top = up + 'px';
     }
+
+});
+
+//4
+// let testing = document.querySelector(".testing");
+// document.addEventListener('click', (event) => {
+// document.querySelector(".clientX").textContent = event.clientX;
+// document.querySelector(".clientY").textContent = event.clientY;
+// document.querySelector(".pageX").textContent = event.pageX;
+// document.querySelector(".pageY").textContent = event.pageY;
+// });
+
+//5
+const block = document.querySelector('.block');
+let mouseX = 0;
+let mouseY = 0;
+
+// let blockPositionX = 0;
+// let blockPositionY = 0;
+
+let posBlockAndMouse = 0;
+document.addEventListener('mousemove', e => {
+
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+
+    let blockPositionX = block.offsetWidth / 2;
+    let blockPositionY = block.offsetHeight / 2;
+
+    let out = mouseX - blockPositionX;
+    let out2 = mouseY - blockPositionY;
+    block.style.left = out + "px";
+    block.style.top = out2 + "px";
+
+   
 });
